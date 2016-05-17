@@ -1,0 +1,5 @@
+w:\visual studio 2012\Projects\Bootstrap Theme Company\Bootstrap Theme Company\bin\Bootstrap Theme Company.dll
+w:\visual studio 2012\Projects\Bootstrap Theme Company\Bootstrap Theme Company\bin\Bootstrap Theme Company.pdb
+w:\visual studio 2012\Projects\Bootstrap Theme Company\Bootstrap Theme Company\obj\Debug\Bootstrap Theme Company.csprojResolveAssemblyReference.cache
+w:\visual studio 2012\Projects\Bootstrap Theme Company\Bootstrap Theme Company\obj\Debug\Bootstrap Theme Company.dll
+w:\visual studio 2012\Projects\Bootstrap Theme Company\Bootstrap Theme Company\obj\Debug\Bootstrap Theme Company.pdb

@@ -1,0 +1,135 @@
+﻿body {
+}
+
+.verso-taoista {
+    font-family: Papyrus;
+    font-size: x-large;
+    float: none;
+    margin: 0 auto;
+}
+
+.p.izq {
+    text-align: left;
+}
+
+.bg-white {
+    background-color:white;
+}
+
+.logo {
+    font-size: 150px;
+}
+
+@media screen and (max-width:768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+.whitesmoke {
+    background: rgba(255,255,255,0.4);
+}
+
+.whitesmoker {
+    background: rgba(255,255,255,0.65);
+}
+
+.whitesmokor {
+    background: rgba(255,255,255,0.85);
+}
+
+.whitesmoky {
+    background: rgba(255,255,255,0.25);
+}
+
+.whitenull {
+    background: rgba(255,255,255,0);
+}
+
+.jumbotron {    
+    color: #009933;
+    text-shadow: 0px 0px 20px #ffd800;
+    padding: 150px 25px 100px 25px;
+    font-weight: bold;
+}
+
+.container-fluid {
+    padding: 105px 50px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #009933;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+    .navbar li a, .navbar .navbar-brand {
+        color: #fff !important;
+    }
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #009933 !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.glowy {
+    border-radius:50%;
+    vertical-align:middle;
+    box-shadow: 0 0 0 0px #ddd;
+    transition: box-shadow 0.3s;
+}
+
+.glowy:hover {
+    box-shadow: 0 0 0 5px #ffd800;  
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.carousel-caption {
+    top: auto;
+    bottom: -12px;
+}
+
+.carousel-indicators{
+    position:absolute;
+   bottom:-7px; 
+   z-index:15;
+}
+
+.megabg {
+  background: url(bamboo-crop.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
