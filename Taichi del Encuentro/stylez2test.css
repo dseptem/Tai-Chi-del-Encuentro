@@ -1,4 +1,9 @@
 ﻿body {
+   overflow-x:hidden;
+}
+
+html {
+    overflow-x:hidden;
 }
 
 .verso-taoista {
@@ -128,12 +133,14 @@
 
 @media only screen and (max-width: 767px) {
     .megabg {
-        background: url(bamboo-crop-xs.jpg) no-repeat center center fixed;
+        /*background-color:#f6eebf*/
+        background: url(bamboo-crop-xs.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
+
 }
 
 @media (min-width: 768px) {

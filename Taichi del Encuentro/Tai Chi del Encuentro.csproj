@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bamboo-crop-xs.jpg" />
     <Content Include="Bamboo-crop.jpg" />
     <Content Include="Bamboo.jpg" />
     <Content Include="fotos\abanico.jpg" />

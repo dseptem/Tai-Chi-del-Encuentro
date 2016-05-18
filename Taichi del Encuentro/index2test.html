@@ -42,16 +42,26 @@
                 <h1>Tai Chi del Encuentro</h1>
                 <h2>Viva mejor, practique Tai Chi</h2>
                 <br />
-                <form class="form-inline">
+                <!--<form class="form-inline">
                     <input type="email" class="form-control" size="50" placeholder="Dirección de email" />
                     <button type="button" class="btn btn-success">Subscribirse</button>
+                </form>-->
+                <form class="form-inline" role="form" action="assets/subscribe.php" method="post">
+                    <div class="form-group">
+                        <label class="sr-only" for="subscribe-email">Email</label>
+                        <input type="text" name="email" placeholder="Introduzca su email..." class="subscribe-email form-control" id="subscribe-email">
+                    </div>
+                    <button type="submit" class="btn btn-success">Subscribir</button>
                 </form>
+
+                <div class="success-message"></div>
+                <div class="error-message"></div>
             </div>
         </div>
         <div>
             <div id="porque" class="container-fluid" style="padding: 10px">
                 <div class="row">
-                    <div class="col-md-4 whitesmokor" style="border-radius: 25px; float: none; margin: 0 auto; padding: 10px;">
+                    <div class="col-md-4 col-md-offset-4 whitesmokor" style="border-radius: 25px;">
                         <h2 class="text-center">¿Por qué practicar Tai Chi?</h2>
                         <p>
                             Con la práctica del Taichi, reaprendemos a respirar, caminar, pararnos, sentarnos, en síntesis, a movernos correctamente y mejorar las posturas.
@@ -248,8 +258,25 @@ una cima a la que no se llega superando a los demás sino superándose a uno mis
                         </h3>
                         <p>
                             Héctor Raúl Martinez<br />
-                            Tel: (11) 15-5897-3364<br />
-                            Correo: info@taichidelencuentro.com.ar
+                            (11) 15-5897-3364<br />
+                            <script type="text/javascript">
+<!-- 
+    // protected email script by Joe Maller
+    // JavaScripts available at http://www.joemaller.com
+    // this script is free to use and distribute
+    // but please credit me and/or link to my site
+
+    emailE = 'taichidelencuentro.com.ar'
+    emailE = ('info' + '@' + emailE)
+    document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+
+    //-->
+                            </script>
+
+                            <noscript>
+                                <em>Email address protected by JavaScript.<br>
+                                    Please enable JavaScript to contact me.</em>
+                            </noscript>
                         </p>
                         <div class="row">
                             <div class="col-sm-12 col-md-3 col-md-offset-3" style="padding-top: 3px">
