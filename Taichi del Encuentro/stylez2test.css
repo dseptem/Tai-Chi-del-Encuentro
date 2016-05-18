@@ -13,7 +13,7 @@
 }
 
 .bg-white {
-    background-color:white;
+    background-color: white;
 }
 
 .logo {
@@ -59,7 +59,7 @@
     background: rgba(255,255,255,0);
 }
 
-.jumbotron {    
+.jumbotron {
     color: #009933;
     text-shadow: 0px 0px 20px #ffd800;
     padding: 150px 25px 100px 25px;
@@ -96,23 +96,23 @@
 }
 
 .glowy {
-    border-radius:50%;
-    vertical-align:middle;
+    border-radius: 50%;
+    vertical-align: middle;
     box-shadow: 0 0 0 0px #ddd;
     transition: box-shadow 0.3s;
 }
 
-.glowy:hover {
-    box-shadow: 0 0 0 5px #ffd800;  
-}
+    .glowy:hover {
+        box-shadow: 0 0 0 5px #ffd800;
+    }
 
 .col-centered {
-    display:inline-block;
-    float:none;
+    display: inline-block;
+    float: none;
     /* reset the text-align */
-    text-align:left;
+    text-align: left;
     /* inline-block space fix */
-    margin-right:-4px;
+    margin-right: -4px;
 }
 
 .carousel-caption {
@@ -120,16 +120,28 @@
     bottom: -12px;
 }
 
-.carousel-indicators{
-    position:absolute;
-   bottom:-7px; 
-   z-index:15;
+.carousel-indicators {
+    position: absolute;
+    bottom: -7px;
+    z-index: 15;
 }
 
-.megabg {
-  background: url(bamboo-crop.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+@media only screen and (max-width: 767px) {
+    .megabg {
+        background: url(bamboo-crop-xs.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .megabg {
+        background: url(bamboo-crop.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
