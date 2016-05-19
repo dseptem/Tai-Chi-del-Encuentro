@@ -36,235 +36,283 @@
             </div>
         </div>
     </nav>
-
-    <div class="jumbobg">
-        <div class="jumbotron text-center whitesmoke">
-            <h1>Tai Chi del Encuentro</h1>
-            <h2>Viva mejor, practique Tai Chi</h2>
-            <form class="form-inline">
-                <input type="email" class="form-control" size="50" placeholder="Dirección de email" />
-                <button type="button" class="btn btn-success">Subscribirse</button>
-            </form>
-        </div>
-    </div>
-<div style="background-image:url('water-health.jpg');background-size:cover">
-    <div id="porque" class="container-fluid">
-        <div class="col-sm-4 whitesmokor" style="border-radius:25px;float: none; margin: 0 auto;padding:25px;">
-            <h2 class="text-center">¿Por qué practicar Tai Chi?</h2>
-            <p>Lorem ipsum dolor...</p>
-            <p>Lorem ipsum dolor...</p>
-            <p>Lorem ipsum dolor...</p>
-            <p>Lorem ipsum dolor...</p>
-            <p>Lorem ipsum dolor...</p>
-            <p>Lorem ipsum dolor...</p>
-            <p>Lorem ipsum dolor...</p>
-        </div>
-    </div>
-</div>
-    <!-- Add Google Maps -->
-    <script>
-        var myCenter = new google.maps.LatLng(-34.64247, -58.51520);
-        var myCenter2 = new google.maps.LatLng(-34.68957, -58.47763);
-        var myCenter3 = new google.maps.LatLng(-34.65724, -58.50297);
-
-        function initialize() {
-            var mapProp = {
-                center: myCenter,
-                zoom: 15,
-                scrollwheel: false,
-                draggable: false,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-
-            var mapProp2 = {
-                center: myCenter2,
-                zoom: 15,
-                scrollwheel: false,
-                draggable: false,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-
-            var mapProp3 = {
-                center: myCenter3,
-                zoom: 15,
-                scrollwheel: false,
-                draggable: false,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-            var map2 = new google.maps.Map(document.getElementById("googleMap2"), mapProp2);
-            var map3 = new google.maps.Map(document.getElementById("googleMap3"), mapProp3);
-
-            var marker = new google.maps.Marker({
-                position: myCenter,
-            });
-
-            var marker2 = new google.maps.Marker({
-                position: myCenter2,
-            });
-
-            var marker3 = new google.maps.Marker({
-                position: myCenter3,
-            });
-
-            marker.setMap(map);
-            marker2.setMap(map2);
-            marker3.setMap(map3);
-
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-
-    <div id="sedes" class="container-fluid text-center bg-grey" style="padding:50px 50px;">
-        <h1>Sedes</h1>
-        <div class="row text-center">
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="sede-liniers.jpg" alt="Liniers">
-                    <!-- Set height and width with CSS -->
-                    <div id="googleMap" style="height: 200px; width: 200px; margin: auto"></div>
-                    <p><strong>Liniers</strong></p>
-                    <p>
-                        Pieres 226<br />
-                        CABA<br />
-                        Mar 18:30 a 21:30 pm<br />
-                        Juev 20 a 21:30 pm
-                    </p>
+    <div class="megabg">
+        <div class="container" style="width: 66%">
+            <div class="jumbotron text-center whitenull">
+                <div class="jumbottl">
+                    <h1>Tai Chi del Encuentro</h1>
+                    <h2>Viva mejor, practique Tai Chi</h2>
+                    <br />
                 </div>
-            </div>
-            <div id="lugano" class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="sede-lugano.jpg" alt="Lugano">
-                    <!-- Set height and width with CSS -->
-                    <div id="googleMap2" style="height: 200px; width: 200px; margin: auto"></div>
-                    <p><strong>Lugano</strong></p>
-                    <p>
-                        José León Suarez y Av. General Fernández de la Cruz<br />
-                        CABA<br />
-                        Salón Parroquial<br />
-                        Lun y Mie 19:30 a 20:30 pm
-                    </p>
-                </div>
-            </div>
-            <div id="mataderos" class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="sede-mataderos.jpg" alt="Mataderos">
-                    <div id="googleMap3" style="height: 200px; width: 200px; margin: auto"></div>
-                    <p><strong>Mataderos</strong></p>
-                    <p>
-                        Dirección - A confirmar<br />
-                        10 a 11 am<br />
-                        <br />
-                        <br />
-                    </p>
-                </div>
+                <!--<form class="form-inline">
+                    <input type="email" class="form-control" size="50" placeholder="Dirección de email" />
+                    <button type="button" class="btn btn-success">Subscribirse</button>
+                </form>-->
+                <form class="form-inline" role="form" action="assets/subscribe.php" method="post">
+                    <div class="form-group">
+                        <label class="sr-only" for="subscribe-email">Email</label>
+                        <input type="text" name="email" placeholder="Introduzca su email..." class="subscribe-email form-control" id="subscribe-email">
+                    </div>
+                    <button type="submit" class="btn btn-success">Subscribir</button>
+                </form>
+
+                <div class="success-message"></div>
+                <div class="error-message"></div>
             </div>
         </div>
-    </div>
-    <div style="background-image: url('forest.jpg')">
-        <div id="escuela" class="container-fluid whitesmoky">
-            <div class="row">
-                <div class="col-md-4" style="margin-top: 2%">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border-radius: 25px; overflow: hidden;z-index:1000;">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="img1.jpg" alt="Liniers">
-                                <div class="carousel-caption">
-                                    <p>Sede Liniers</p>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <img src="img2.jpg" alt="Lugano">
-                                <div class="carousel-caption">
-                                    <p>Sede Lugano</p>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <img src="img3.jpg" alt="Mataderos">
-                                <div class="carousel-caption">
-                                    <p>Sede Mataderos</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+        <div>
+            <div id="porque" class="container-fluid" style="padding: 10px">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 whitesmokor" style="border-radius: 25px; padding-top: 5px; padding-bottom: 5px;">
+                        <h2 class="text-center">¿Por qué practicar Tai Chi?</h2>
+                        <p>
+                            Con la práctica del Taichi, reaprendemos a respirar, caminar, pararnos, sentarnos, en síntesis, a movernos correctamente y mejorar las posturas.
+                            <br />
+                            Esta meditación en movimiento busca armonizar el aspecto psicofísico de la persona, mente, cuerpo y espíritu, o sea la integridad del ser.<br />
+                            Sus movimientos son lentos, suaves y circulares, por lo cual, el trabajo muscular se reduce al mínimo. Por tal  motivo no tiene límites de edad para su práctica, lo pueden realizar tanto niños como adultos de avanzada edad o con problemas de movilidad.<br />
+                            Decía un viejo Maestro, que la práctica cotidiana del Taichi procura obtener:
+                        </p>
+                        <ul>
+                            <li>La flexibilidad de un niño</li>
+                            <li>La salud de un gran árbol</li>
+                            <li>La paz interior de una antigua y bella canción</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4 whitesmokor" style="margin-left: auto; margin-right: auto; border-radius: 25px;">
-                    <h2 class="text-center">Nuestra Escuela</h2>
-                    <h4>Escuela de Tai Chi estilo Yang tradicional</h4>
-                    <p class="izq">
-                        Somos una joven escuela con una larga historia…Cuenta la leyenda que allá por el siglo XIII, 
+            </div>
+        </div>
+        <!-- Add Google Maps -->
+        <script>
+            var myCenter = new google.maps.LatLng(-34.64247, -58.51520);
+            var myCenter2 = new google.maps.LatLng(-34.68957, -58.47763);
+            var myCenter3 = new google.maps.LatLng(-34.65724, -58.50297);
+
+            function initialize() {
+                var mapProp = {
+                    center: myCenter,
+                    zoom: 15,
+                    scrollwheel: false,
+                    draggable: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var mapProp2 = {
+                    center: myCenter2,
+                    zoom: 15,
+                    scrollwheel: false,
+                    draggable: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var mapProp3 = {
+                    center: myCenter3,
+                    zoom: 15,
+                    scrollwheel: false,
+                    draggable: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                var map2 = new google.maps.Map(document.getElementById("googleMap2"), mapProp2);
+                var map3 = new google.maps.Map(document.getElementById("googleMap3"), mapProp3);
+
+                var marker = new google.maps.Marker({
+                    position: myCenter,
+                });
+
+                var marker2 = new google.maps.Marker({
+                    position: myCenter2,
+                });
+
+                var marker3 = new google.maps.Marker({
+                    position: myCenter3,
+                });
+
+                marker.setMap(map);
+                marker2.setMap(map2);
+                marker3.setMap(map3);
+
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+        <div id="sedes" class="container-fluid text-center" style="padding: 50px 50px;">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <h1 class="whitesmoker" style="width: auto; border-radius: 25px; margin-bottom: 5px; padding-top: 5px; padding-bottom: 5px;">Sedes</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="sede-liniers.jpg" alt="Liniers">
+                        <!-- Set height and width with CSS -->
+                        <div id="googleMap" style="height: 200px; width: 200px; margin: auto"></div>
+                        <p><strong>Liniers</strong></p>
+                        <p>
+                            Pieres 226<br />
+                            CABA<br />
+                            Mar 18:30 a 21:30 pm<br />
+                            Juev 20 a 21:30 pm
+                        </p>
+                    </div>
+                </div>
+                <div id="lugano" class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="sede-lugano.jpg" alt="Lugano">
+                        <!-- Set height and width with CSS -->
+                        <div id="googleMap2" style="height: 200px; width: 200px; margin: auto"></div>
+                        <p><strong>Lugano</strong></p>
+                        <p>
+                            José León Suarez y Av. General Fernández de la Cruz<br />
+                            CABA<br />
+                            Salón Parroquial<br />
+                            Lun y Mie 19:30 a 20:30 pm
+                        </p>
+                    </div>
+                </div>
+                <div id="mataderos" class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="sede-mataderos.jpg" alt="Mataderos">
+                        <div id="googleMap3" style="height: 200px; width: 200px; margin: auto"></div>
+                        <p><strong>Mataderos</strong></p>
+                        <p>
+                            Dirección - A confirmar<br />
+                            10 a 11 am<br />
+                            <br />
+                            <br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="escuela" class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border-radius: 25px; overflow: hidden; z-index: 1000">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="/fotos/hector-espada.jpg" alt="Hector">
+                                    <div class="carousel-caption">
+                                        <p>Nuestro Instructor</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <img src="/fotos/alumnos1.jpg" alt="Alumnos">
+                                    <div class="carousel-caption">
+                                        <p>Demostración</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <img src="/fotos/abanico.jpg" alt="Abanico">
+                                    <div class="carousel-caption">
+                                        <p>Clase de Abanico</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 whitesmokor" style="border-radius: 25px; padding-top: 5px; padding-bottom: 5px;">
+                        <h2 class="text-center">Nuestra Escuela</h2>
+                        <h4>Escuela de Tai Chi estilo Yang tradicional</h4>
+                        <p class="izq">
+                            Somos una joven escuela con una larga historia…Cuenta la leyenda que allá por el siglo XIII, 
 un mítico monje llamado Chang San Feng creo esta técnica, por tradición y secreto de clanes y familias  el Taichi se fue transmitiendo y creciendo, expandiéndose y mutando, se generaron varios estilos y los diferentes maestros le dieron su toque. Hoy en el siglo XXI, heredamos refinadas técnicas y formas de diferentes mentores, tanto antiguas, tradicionales como modernas.
 Compartimos nuestro arte, hermanándonos en la práctica con otras escuelas para enriquecernos y generar experiencias creativas y de crecimiento tanto interior como exterior. 
 Lo que nos hace diferentes es nuestro espíritu… la determinación de alcanzar la cima, 
 una cima a la que no se llega superando a los demás sino superándose a uno mismo…recorriendo el camino de liberación interior, descubriendo el Tao.
-                    </p>
-                </div>
-                <div id="holder" class="col-md-4">
-                    <img src="logo.jpg" class="img-responsive margin" style="border-radius: 25px">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="statue">
-        <div id="contacto" class="container-fluid whitesmoky">
-            <div class="row">
-                <div class="col-md-3 text-center whitesmoker" style="float: none; margin: 0 auto; font-weight: bold; padding-top: 10px; padding-bottom: 25px; border-radius: 25px;">
-                    <h2>Contacto</h2>
-                    <h3>Instructor<br />
-                    </h3>
-                    <h4>Héctor Raúl Martinez<br />
-                        Tel: (11) 15-5897-3364<br />
-                        Correo: info@taichidelencuentro.com.ar</h4>
-                    <div class="col-xs-3 col-centered" style="padding-top:3px">
-                        <a href="https://es-la.facebook.com/hung.long.710">
-                            <img class="img-responsive glowy img-circle" src="facebook-icon.png" style="width: 40px;" />
-                        </a>
+                        </p>
                     </div>
-                    <div class="col-xs-3 col-centered">
-                        <a href="https://www.youtube.com/user/taichidelencuentro">
-                            <img class="img-responsive glowy img-circle" src="youtube-icon.png" style="width: 40px;" />
-                        </a>
+                    <div class="col-md-4">
+                        <img src="logo.jpg" class="img-responsive margin" style="border-radius: 25px;">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="statue">
+            <div id="contacto" class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 text-center whitesmoker" style="font-weight: bold; padding-top: 10px; padding-bottom: 20px; border-radius: 25px;">
+                        <h2>Contacto</h2>
+                        <h3>Instructor<br />
+                        </h3>
+                        <h4>
+                            Héctor Raúl Martinez<br />
+                            (11) 15-5897-3364<br />
+                            <script type="text/javascript">
+<!-- 
+    // protected email script by Joe Maller
+    // JavaScripts available at http://www.joemaller.com
+    // this script is free to use and distribute
+    // but please credit me and/or link to my site
 
-    <div class="verso-bg">
+    emailE = 'taichidelencuentro.com.ar'
+    emailE = ('info' + '@' + emailE)
+    document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+
+    //-->
+                            </script>
+
+                            <noscript>
+                                <em>Email address protected by JavaScript.<br>
+                                    Please enable JavaScript to contact me.</em>
+                            </noscript>
+                        </h4>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3 col-md-offset-3" style="padding-top: 3px">
+                                <a href="https://es-la.facebook.com/hung.long.710">
+                                    <img class="glowy img-circle center-block" src="facebook-icon.png" style="width: 40px;" />
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <a href="https://www.youtube.com/user/taichidelencuentro">
+                                    <img class="glowy img-circle center-block" src="youtube-icon.png" style="width: 40px;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div id="verso" class="container-fluid verso-taoista">
-            <div class="col-md-4 whitesmoky" style="float: none; margin: 0 auto; font-weight: bold; padding-top: 15px; padding-bottom: 15px; border-radius: 25px;">
-                <h2 class="text-center">Verso Taoísta</h2>
-                <h3 class="text-center">Cuando no estás ni enojado ni ansioso estas en armonía,<br />
-                    respondiendo  a los eventos tal como surgen.<br />
-                    El viento sopla las nubes, el tigre está en paz,<br />
-                    el dragón amansado, la mente en calma.<br />
-                    En el cielo azul la brillante luna resplandece en su blancura.</h3>
-                <h4 class="text-center"><b>Tan Guan Chen <em>-una mujer  taoísta del siglo XII d.C.-</em></b></h4>
+            <div class="row">
+                <div class="col-md-4 whitesmoker" style="float: none; margin: 0 auto; font-weight: bold; padding-top: 15px; padding-bottom: 15px; border-radius: 25px;">
+                    <h2 class="text-center">Verso Taoísta</h2>
+                    <h3 class="text-center">Cuando no estás ni enojado ni ansioso estas en armonía,<br />
+                        respondiendo  a los eventos tal como surgen.<br />
+                        El viento sopla las nubes, el tigre está en paz,<br />
+                        el dragón amansado, la mente en calma.<br />
+                        En el cielo azul la brillante luna resplandece en su blancura.</h3>
+                    <h4 class="text-center"><b>Tan Guan Chen <em>-una mujer  taoísta del siglo XII d.C.-</em></b></h4>
+                </div>
             </div>
         </div>
-    </div>
 
+    </div>
     <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links in navbar + footer link

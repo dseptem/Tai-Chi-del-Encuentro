@@ -60,6 +60,7 @@
     <Content Include="assets\js\scripts.js" />
     <Content Include="Bamboo-crop-xs.jpg" />
     <Content Include="Bamboo-crop.jpg" />
+    <Content Include="Bamboo-smoked-xs.jpg" />
     <Content Include="Bamboo.jpg" />
     <Content Include="fotos\abanico.jpg" />
     <Content Include="fotos\alumnos1.JPG" />
@@ -92,6 +93,9 @@
   <ItemGroup>
     <Content Include="assets\MailChimp.php" />
     <Content Include="assets\subscribe.php" />
+    <Content Include="assets\Matura MT.ttf" />
+    <Content Include="assets\MATURASC.TTF" />
+    <Content Include="assets\PAPYRUS.TTF" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
