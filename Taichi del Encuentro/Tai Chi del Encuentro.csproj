@@ -65,25 +65,17 @@
     <Content Include="fotos\abanico.jpg" />
     <Content Include="fotos\alumnos1.JPG" />
     <Content Include="fotos\hector-espada.JPG" />
-    <Content Include="stylez2test.css" />
-    <Content Include="index2test.html" />
-    <Content Include="forest.jpg" />
+    <Content Include="stylez.css" />
+    <Content Include="index.html" />
     <Content Include="facebook-icon.png" />
     <Content Include="favicon.ico" />
     <Content Include="img1.jpg" />
     <Content Include="img2.jpg" />
     <Content Include="img3.jpg" />
-    <Content Include="index.html" />
     <Content Include="logo.jpg" />
     <Content Include="sede-liniers.jpg" />
     <Content Include="sede-lugano.jpg" />
     <Content Include="sede-mataderos.jpg" />
-    <Content Include="statue.jpg" />
-    <Content Include="stones-health.jpg" />
-    <Content Include="stylez.css" />
-    <Content Include="texture-green.jpg" />
-    <Content Include="water-health-org.jpg" />
-    <Content Include="water-health.jpg" />
     <Content Include="Web.config" />
     <Content Include="youtube-icon.png" />
   </ItemGroup>
@@ -92,7 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\MailChimp.php" />
-    <Content Include="assets\subscribe.php" />
+    <Content Include="assets\subscribe.php">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="assets\Matura MT.ttf" />
     <Content Include="assets\MATURASC.TTF" />
     <Content Include="assets\PAPYRUS.TTF" />
