@@ -76,7 +76,7 @@ html {
 
 .jumbotron {
     color: #009933;
-    padding: 150px 25px 100px 25px;  
+    padding: 150px 25px 30px 25px;    
 }
 
 @media (min-width: 768px) {
@@ -176,6 +176,23 @@ html {
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
         overflow-x:hidden;
+    }
+
+    .specialphone {
+        padding-bottom: 10px;
+    }
+
+    .escuelaspecialphone {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 991px) {
+    .logophone {
+        margin: auto;
     }
 }
 
