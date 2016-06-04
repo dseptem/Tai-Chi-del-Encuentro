@@ -182,28 +182,28 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img src="/fotos/hector-espada.jpg" alt="Hector">
+                                    <img id="instructor" src="/fotos/hector-espada.jpg" alt="Nuestro Instructor" onclick="onClick(this)">
                                     <div class="carousel-caption">
                                         <p>Nuestro Instructor</p>
                                     </div>
                                 </div>
 
                                 <div class="item">
-                                    <img src="/fotos/alumnos1.jpg" alt="Alumnos">
+                                    <img src="/fotos/alumnos1.jpg" alt="Demostración" onclick="onClick(this)">
                                     <div class="carousel-caption">
                                         <p>Demostración</p>
                                     </div>
                                 </div>
 
                                 <div class="item">
-                                    <img src="/fotos/abanico.jpg" alt="Abanico">
+                                    <img src="/fotos/abanico.jpg" alt="Clase de Abanico" onclick="onClick(this)">
                                     <div class="carousel-caption">
                                         <p>Clase de Abanico</p>
                                     </div>
                                 </div>
 
                                 <div class="item">
-                                    <img src="/fotos/alumnos2.jpg" alt="Puño">
+                                    <img src="/fotos/alumnos2.jpg" alt="Forma de Puño" onclick="onClick(this)">
                                     <div class="carousel-caption">
                                         <p>Forma de Puño</p>
                                     </div>
@@ -278,7 +278,6 @@ Lo que nos hace diferentes es nuestro espíritu… la determinación de alcanzar
 
     //-->
                             </script>
-
                             <noscript>
                                 <em>Email address protected by JavaScript.<br>
                                     Please enable JavaScript to contact me.</em>
@@ -339,6 +338,51 @@ Lo que nos hace diferentes es nuestro espíritu… la determinación de alcanzar
                 });
             });
         })
+    </script>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function onClick(element) {
+            var img = element.src
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = element.src;
+            modalImg.alt = element.alt;
+            captionText.innerHTML = element.alt;
+        }
     </script>
 
 </body>
